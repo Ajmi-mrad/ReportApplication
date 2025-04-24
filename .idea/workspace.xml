@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e6175ace-0107-45e0-bf7c-6c86fb5f4ca9" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2tADW62EF1bTq8gPAc3DMrsckgK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Bureau.executor": "Run",
+    "Application.BureauUser.executor": "Run",
+    "Application.ConnexionInterface.executor": "Run",
+    "Application.Constat.Bureau.executor": "Run",
+    "Application.Constat.DBConnexion.executor": "Run",
+    "Application.DBConnexion.executor": "Run",
+    "Application.GestionEtudiant.executor": "Run",
+    "Application.Menu.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "I:/TpJava/Threadd",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.ConnexionInterface">
+    <configuration name="Bureau" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Menu.Bureau" />
+      <module name="tpMenu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Menu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConnexionInterface" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Constat.ConnexionInterface" />
+      <module name="tpMenu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Constat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Constat.Bureau" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Constat.Bureau" />
+      <module name="tpMenu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Constat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GestionEtudiant" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Menu.GestionEtudiant" />
+      <module name="tpMenu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Menu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Menu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Menu.Menu" />
+      <module name="tpMenu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Menu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ConnexionInterface" />
+        <item itemvalue="Application.Constat.Bureau" />
+        <item itemvalue="Application.Bureau" />
+        <item itemvalue="Application.GestionEtudiant" />
+        <item itemvalue="Application.Menu" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e6175ace-0107-45e0-bf7c-6c86fb5f4ca9" name="Changes" comment="" />
+      <created>1739786017881</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1739786017881</updated>
+      <workItem from="1739786019040" duration="3283000" />
+      <workItem from="1740378106777" duration="10773000" />
+      <workItem from="1740693738518" duration="38000" />
+      <workItem from="1740820997223" duration="177000" />
+      <workItem from="1740960804358" duration="5723000" />
+      <workItem from="1740966939398" duration="723000" />
+      <workItem from="1740989501913" duration="6411000" />
+      <workItem from="1741095053515" duration="67000" />
+      <workItem from="1741592662742" duration="7954000" />
+      <workItem from="1741705791611" duration="594000" />
+      <workItem from="1743037488092" duration="2950000" />
+      <workItem from="1743493707184" duration="24269000" />
+      <workItem from="1744581226381" duration="8367000" />
+      <workItem from="1744617916536" duration="705000" />
+      <workItem from="1744659126366" duration="20047000" />
+      <workItem from="1744755916650" duration="8551000" />
+      <workItem from="1744818654075" duration="4819000" />
+      <workItem from="1744824136370" duration="2323000" />
+      <workItem from="1744826519580" duration="1749000" />
+      <workItem from="1744999746585" duration="107000" />
+      <workItem from="1745182747054" duration="7260000" />
+      <workItem from="1745354530875" duration="21738000" />
+      <workItem from="1745432721287" duration="10167000" />
+      <workItem from="1745511073344" duration="1935000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
