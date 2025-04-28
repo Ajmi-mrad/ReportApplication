@@ -12,8 +12,8 @@ public class Bureau extends JFrame {
     JMenu menu_profil;
     JMenu constat;
     JMenuItem editReport;
-    JMenu menu_accident;
-    JMenuItem addCar;
+    JMenu menu_accident, menuChat;
+    JMenuItem addCar,adminChat;
     JMenuItem editCar;
     JMenuItem deleteCar;
     JMenuItem editProfil;
@@ -50,6 +50,11 @@ public class Bureau extends JFrame {
         menu_accident.add(editAccident);
         constat.add(editReport);
 
+        menuChat = new JMenu("Chat");
+        adminChat = new JMenuItem("Admin Chat Console");
+        menuChat.add(adminChat);
+
+        menubar.add(menuChat);
         menubar.add(menu_cars);
         menubar.add(menu_profil);
         menubar.add(constat);
@@ -117,6 +122,7 @@ public class Bureau extends JFrame {
                 gestionReport.setVisible(true);
             }
         });
+
             /*
         });
         tpEtudiant.addActionListener(new ActionListener() {

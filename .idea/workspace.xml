@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6175ace-0107-45e0-bf7c-6c86fb5f4ca9" name="Changes" comment="" />
+    <list default="true" id="e6175ace-0107-45e0-bf7c-6c86fb5f4ca9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Constat/Client/ClientReportServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Constat/ClientRmi/Chat/ChatRemote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Constat/ClientRmi/Chat/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Constat/ClientRmi/Client/MainClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Constat/ReportGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Constat/Server/HandleClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Constat/Server/MainServeur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Constat/ServerRmi/Chat/ChatRemote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Constat/ServerRmi/Chat/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Constat/ServerRmi/Server/ChatImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Constat/ServerRmi/Server/MainServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Constat/Bureau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Constat/Bureau.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Constat/BureauUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Constat/BureauUser.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +28,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -21,13 +37,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2tADW62EF1bTq8gPAc3DMrsckgK" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -36,18 +54,24 @@
   "keyToString": {
     "Application.Bureau.executor": "Run",
     "Application.BureauUser.executor": "Run",
+    "Application.ClientMain.executor": "Run",
     "Application.ConnexionInterface.executor": "Run",
     "Application.Constat.Bureau.executor": "Run",
     "Application.Constat.DBConnexion.executor": "Run",
     "Application.DBConnexion.executor": "Run",
     "Application.GestionEtudiant.executor": "Run",
+    "Application.GestionReportUser.executor": "Run",
+    "Application.MainClient.executor": "Run",
+    "Application.MainServer.executor": "Run",
+    "Application.MainServeur.executor": "Run",
     "Application.Menu.executor": "Run",
+    "Application.ReportServer.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "I:/TpJava/Threadd",
+    "last_opened_file_path": "I:/tpMenuDB/src/Constat/UserRmi/Chat",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,13 +84,46 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.ConnexionInterface">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\tpMenuDB\src\Constat\UserRmi\Chat" />
+      <recent name="I:\tpMenuDB\src\Constat\ServerRmi\Chat" />
+      <recent name="I:\tpMenuDB\src\Constat" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.BureauUser">
     <configuration name="Bureau" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Menu.Bureau" />
       <module name="tpMenu" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Menu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BureauUser" type="Application" factoryName="Application" singleton="false" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Constat.BureauUser" />
+      <module name="tpMenu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Constat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientMain" type="Application" factoryName="Application" singleton="false" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Constat.Client.ClientMain" />
+      <module name="tpMenu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Constat.Client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,12 +157,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GestionEtudiant" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Menu.GestionEtudiant" />
+    <configuration name="GestionReportUser" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Constat.GestionReportUser" />
       <module name="tpMenu" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Menu.*" />
+          <option name="PATTERN" value="Constat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,12 +170,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Menu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Menu.Menu" />
+    <configuration name="MainClient" type="Application" factoryName="Application" singleton="false" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Constat.ClientRmi.Client.MainClient" />
       <module name="tpMenu" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Menu.*" />
+          <option name="PATTERN" value="Constat.ClientRmi.Client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Constat.ServerRmi.Server.MainServer" />
+      <module name="tpMenu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Constat.ServerRmi.Server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Bureau" />
+        <item itemvalue="Application.MainServer" />
+        <item itemvalue="Application.GestionReportUser" />
         <item itemvalue="Application.ConnexionInterface" />
         <item itemvalue="Application.Constat.Bureau" />
-        <item itemvalue="Application.Bureau" />
-        <item itemvalue="Application.GestionEtudiant" />
-        <item itemvalue="Application.Menu" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +244,10 @@
       <workItem from="1745182747054" duration="7260000" />
       <workItem from="1745354530875" duration="21738000" />
       <workItem from="1745432721287" duration="10167000" />
-      <workItem from="1745511073344" duration="1935000" />
+      <workItem from="1745511073344" duration="12509000" />
+      <workItem from="1745684132746" duration="6020000" />
+      <workItem from="1745711391934" duration="4836000" />
+      <workItem from="1745753213219" duration="26248000" />
     </task>
     <servers />
   </component>
