@@ -12,10 +12,10 @@ public class Bureau extends JFrame {
     JMenu menu_profil;
     JMenu constat;
     JMenuItem editReport;
-    JMenu menu_accident, menuChat;
-    JMenuItem addCar,adminChat;
+    JMenu menu_accident;
+    //JMenuItem addCar;
     JMenuItem editCar;
-    JMenuItem deleteCar;
+    //JMenuItem deleteCar;
     JMenuItem editProfil;
     JMenuItem addDriver;
     JMenuItem editAccident;
@@ -24,7 +24,7 @@ public class Bureau extends JFrame {
 
     //CurriculumForm cv;
     public Bureau() {
-        setTitle("Java swing project");
+        setTitle("Rapido Report");
         setSize(500, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -36,25 +36,20 @@ public class Bureau extends JFrame {
         constat = new JMenu("Constat");
         editReport = new JMenuItem("Edit Report");
         editProfil = new JMenuItem("Edit Profil");
-        addCar = new JMenuItem("Add");
+        //addCar = new JMenuItem("Add");
         editCar = new JMenuItem("Edit");
-        deleteCar = new JMenuItem("Delete");
+        //deleteCar = new JMenuItem("Delete");
         editAccident = new JMenuItem("Edit Accident");
        // addDriver = new JMenuItem("Add Driver");
-        menu_cars.add(addCar);
+        //menu_cars.add(addCar);
         menu_cars.add(editCar);
-        menu_cars.add(deleteCar);
+       // menu_cars.add(deleteCar);
         //menu_cars.add(tpEtudiant);
         menu_profil.add(editProfil);
         //menu_profil.add(addDriver);
         menu_accident.add(editAccident);
         constat.add(editReport);
 
-        menuChat = new JMenu("Chat");
-        adminChat = new JMenuItem("Admin Chat Console");
-        menuChat.add(adminChat);
-
-        menubar.add(menuChat);
         menubar.add(menu_cars);
         menubar.add(menu_profil);
         menubar.add(constat);
@@ -89,7 +84,7 @@ public class Bureau extends JFrame {
 
          */
 
-        addCar.addActionListener(new ActionListener() {
+        editCar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 GestionCar gestionCar = new GestionCar();
@@ -122,20 +117,6 @@ public class Bureau extends JFrame {
                 gestionReport.setVisible(true);
             }
         });
-
-            /*
-        });
-        tpEtudiant.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                GestionEtudiant gestionEtudiant = new GestionEtudiant();
-                //desktop.add(gestionEtudiant);
-                gestionEtudiant.setSize(500, 500);
-                gestionEtudiant.setVisible(true);
-            }
-        });
-
- */
 
     }
 

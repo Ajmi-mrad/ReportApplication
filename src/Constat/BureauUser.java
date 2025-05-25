@@ -16,7 +16,7 @@ public class BureauUser extends JFrame {
     JMenu menuChat;
     private JMenuItem addCar, updateCar, deleteCar, viewAccidents;
     JMenuItem addReport, openChat;
-    private String userCin;
+    static String userCin;
     private DriverrManager driverManager;
 
     public BureauUser(String userCin) {
@@ -24,7 +24,7 @@ public class BureauUser extends JFrame {
         this.driverManager = new DriverrManager();
 
         // Set up the frame
-        setTitle("Bureau Utilisateur");
+        setTitle("Rapido Constat");
         setSize(1200, 800);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
@@ -38,14 +38,14 @@ public class BureauUser extends JFrame {
 
         // Cars menu
         menuCars = new JMenu("Voitures");
-        addCar = new JMenuItem("Ajouter une voiture");
-        updateCar = new JMenuItem("Modifier une voiture");
-        deleteCar = new JMenuItem("Supprimer une voiture");
+        //addCar = new JMenuItem("Ajouter une voiture");
+        updateCar = new JMenuItem("Edite une voiture");
+        //deleteCar = new JMenuItem("Supprimer une voiture");
 
 
-        menuCars.add(addCar);
+        //menuCars.add(addCar);
         menuCars.add(updateCar);
-        menuCars.add(deleteCar);
+        //menuCars.add(deleteCar);
 
         // Accidents menu
         menuAccidents = new JMenu("Accidents");
@@ -56,7 +56,7 @@ public class BureauUser extends JFrame {
 
         //Report Menu
         menuReports = new JMenu("Rapports");
-        addReport = new JMenuItem("Ajouter un rapport");
+        addReport = new JMenuItem("Editer un rapport");
         menuReports.add(addReport);
 
         // Chat menu
@@ -75,9 +75,9 @@ public class BureauUser extends JFrame {
         setJMenuBar(menuBar);
 
         // Add action listeners
-        addCar.addActionListener(e -> openGestionCarUser());
+        //addCar.addActionListener(e -> openGestionCarUser());
         updateCar.addActionListener(e -> openGestionCarUser());
-        deleteCar.addActionListener(e -> openGestionCarUser());
+        //deleteCar.addActionListener(e -> openGestionCarUser());
         viewAccidents.addActionListener(e -> openGestionAccidents());
         addReport.addActionListener(e -> openReportInterface());
         openChat.addActionListener(e -> openChatInterface());
@@ -132,7 +132,7 @@ public class BureauUser extends JFrame {
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            BureauUser bureauUser = new BureauUser("12"); // Replace with actual CIN
+            BureauUser bureauUser = new BureauUser(userCin); // Replace with actual CIN
             bureauUser.setVisible(true);
         });
     }

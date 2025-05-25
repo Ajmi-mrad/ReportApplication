@@ -27,6 +27,7 @@ public class MainClient extends JFrame {
     private void initializeClient() {
         try {
             String url = "rmi://localhost:9003/chatapp";
+            // Connect to the RMI registry and get the remote object
             chatService = (ChatRemote) Naming.lookup(url);
             System.out.println("Connected to chat server as: " + pseudo);
         } catch (Exception e) {

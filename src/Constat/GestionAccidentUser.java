@@ -183,10 +183,15 @@ public class GestionAccidentUser extends JInternalFrame {
             if (confirm == JOptionPane.YES_OPTION) {
                 try {
                     int accidentId = Integer.parseInt(table.getValueAt(row, 0).toString());
-                    int deleteAccident = accidentManager.deleteAccident(accidentId);
+                    // First delete from child table
                     int deleteResult = myTableModelAccidentUser.deleteAccidentUser(currentUserCin, accidentId);
-                    if (deleteAccident > 0 && deleteResult > 0) {
-                        JOptionPane.showMessageDialog(this, "Accident supprimé avec succès");
+                    if (deleteResult > 0) {
+                        // Then delete from parent table
+                        int deleteAccident = accidentManager.deleteAccident(accidentId);
+                        if (deleteAccident > 0) {
+                            myTableModelAccidentUser.loadData();
+                            JOptionPane.showMessageDialog(this, "Accident supprimé avec succès");
+                        }
                     } else {
                         JOptionPane.showMessageDialog(this, "Erreur lors de la suppression");
                     }

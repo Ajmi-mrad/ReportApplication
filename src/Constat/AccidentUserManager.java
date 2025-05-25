@@ -18,12 +18,15 @@ public class AccidentUserManager {
 
     public void createTable() {
         try {
+            // delete cascade
             String query = "CREATE TABLE IF NOT EXISTS AccidentUser (" +
                     "cin VARCHAR(255), " +
                     "accident_id INT, " +
                     "PRIMARY KEY (cin, accident_id), " +
                     "FOREIGN KEY (cin) REFERENCES Driverr(cin), " +
-                    "FOREIGN KEY (accident_id) REFERENCES Accident(id))";
+                    "FOREIGN KEY (accident_id) REFERENCES Accident(id))"
+                    //" ON DELETE CASCADE"
+                    ;
             statement.executeUpdate(query);
         } catch (SQLException e) {
             e.printStackTrace();
@@ -66,4 +69,19 @@ public class AccidentUserManager {
             return null;
         }
     }
+    // check if the accidentuser exists
+    public boolean accidentUserExists(String cin, int accidentId) {
+        String query = "SELECT * FROM AccidentUser WHERE cin = ? AND accident_id = ?";
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            preparedStatement.setString(1, cin);
+            preparedStatement.setInt(2, accidentId);
+            ResultSet rs = preparedStatement.executeQuery();
+            return rs.next();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
 }

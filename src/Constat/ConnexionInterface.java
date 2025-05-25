@@ -67,13 +67,17 @@ public class ConnexionInterface extends JFrame {
                 // For example, you can use a method like driverrManager.checkUser(cin, password);
                 // If the user exists, navigate to the next screen
                 // For example, you can use a method like new NextScreen().setVisible(true);
-                if (driverrManager.checkDriver(cin,password) == true) {
-                    // Navigate to the next screen
+                if (driverrManager.checkDriver(cin,password) == true && !cin.equals("0000") && !password.equals("0000")){
                     JOptionPane.showMessageDialog(null, "Connexion réussie!", "Succès", JOptionPane.INFORMATION_MESSAGE);
                     // new NextScreen().setVisible(true);
-                    Bureau b = new Bureau();
-                    b.setVisible(true);
-                } else {
+                    BureauUser bureauUser = new BureauUser(cin); // Open BureauUser with the CIN
+                    bureauUser.setVisible(true);
+                }else if(driverrManager.checkDriver("0000","0000")) {
+                    JOptionPane.showMessageDialog(null, "Hello admin!", "Succès", JOptionPane.INFORMATION_MESSAGE);
+                    Bureau bureau = new Bureau(); // Open Bureau with the CIN
+                    bureau.setVisible(true);
+                }
+                else {
                     JOptionPane.showMessageDialog(null, "CIN ou mot de passe incorrect.", "Erreur", JOptionPane.ERROR_MESSAGE);
                 }
             }

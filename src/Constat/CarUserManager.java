@@ -78,4 +78,17 @@ public class CarUserManager {
             return null;
         }
     }
+    public boolean carUserExists(String cin, int carId) {
+        String query = "SELECT * FROM CarUser WHERE cin = ? AND car_id = ?";
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+            preparedStatement.setString(1, cin);
+            preparedStatement.setInt(2, carId);
+            ResultSet rs = preparedStatement.executeQuery();
+            return rs.next();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
 }

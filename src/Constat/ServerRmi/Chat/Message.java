@@ -7,7 +7,6 @@ public class Message implements Serializable {
     String msg;
     String pseudo;
     Date time;
-
     public Message() {
         this.msg = "";
         this.pseudo = "";

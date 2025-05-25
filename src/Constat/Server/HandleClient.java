@@ -1,7 +1,8 @@
 package Constat.Server;
 
-import Constat.ReportGenerator;
-import Constat.ReportManager;
+import Constat.*;
+
+import javax.swing.*;
 import java.io.*;
 import java.net.Socket;
 import java.util.ArrayList;
@@ -109,7 +110,8 @@ public class HandleClient extends Thread {
             // Create a thread for report generation and database insertion
             Thread reportThread = new Thread(() -> {
                 try {
-                    // 1. First generate the report
+                    /*
+                    // frst generate the report
                     ReportGenerator reportGenerator = new ReportGenerator();
                     reportGenerator.generateReport(
                             Integer.parseInt(accidentId),
@@ -120,7 +122,9 @@ public class HandleClient extends Thread {
                     );
                     System.out.println("Report generated successfully for Accident ID: " + accidentId);
 
-                    // 2. Then insert into database
+                     */
+
+                    // then insert into database
                     ReportManager reportManager = new ReportManager();
                     int result = reportManager.insertReport(
                             Integer.parseInt(accidentId),
